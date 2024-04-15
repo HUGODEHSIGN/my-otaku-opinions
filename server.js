@@ -1,5 +1,6 @@
 const express = require('express');
 const sequelize = require('./config/connection');
+const routes = require('./controllers/index');
 
 const app = express();
 
@@ -21,3 +22,9 @@ sequelize
   .catch((err) => {
     console.log('Database connection error:', err);
   });
+
+app.use(routes);
+
+app.listen(PORT, () => {
+  console.log(`listening on port ${PORT}...`);
+});
