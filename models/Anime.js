@@ -32,6 +32,7 @@ Anime.init(
     },
     api_id: {
       type: DataTypes.INTEGER,
+      allowNull: false,
     },
   },
   {
