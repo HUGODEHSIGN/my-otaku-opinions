@@ -7,3 +7,7 @@ const PORT = process.env.PORT || 3001;
 app.get('/', (req, res) => {
     res.send('Howdy, World');
 });
+
+app.listen(PORT, () => {
+    console.log(`listening on port ${PORT}...`);
+});
