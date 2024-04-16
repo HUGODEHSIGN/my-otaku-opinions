@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Uncle Jessie",
+    "email": "jess@fullhouse.com",
+    "password": "password987"
+  },
+  {
+    "name": "Joey",
+    "email": "joey@fullhouse.com",
+    "password": "password123"
+  },
+  {
+    "name": "Blacklist",
+    "email": "theblacklist@gmail.com",
+    "password": "password135"
+  }
+]
