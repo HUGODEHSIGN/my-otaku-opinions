@@ -59,4 +59,7 @@ User.init(
   }
 );
 
+// many to many relationship with the Anime model through the connection table useranime
+User.belongsToMany(Anime, { through: 'UserAnime' });
+
 module.exports = User;
