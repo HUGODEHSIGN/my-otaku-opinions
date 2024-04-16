@@ -1,9 +1,10 @@
+// this is to join the table to create a Many to Many relationship
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Anime extends Model {}
+class UserAnime extends Model {}
 
-Anime.init(
+UserAnime.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,21 +12,23 @@ Anime.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    description: {
-      type: DataTypes.STRING,
-    },
-    data_added: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,
-    },
-    api_id: {
+    user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      references: {
+        model: 'user',
+        key: 'id',
+        unique: false,
+      },
+    },
+    anime_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'anime',
+        key: 'id',
+        unique: false,
+      },
     },
   },
   {
@@ -33,8 +36,7 @@ Anime.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'anime',
+    modelName: 'useranime',
   }
 );
-
-module.exports = Anime;
+module.exports = UserAnime;
