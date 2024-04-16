@@ -36,7 +36,7 @@ UserAnime.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'userAnime',
+    modelName: 'useranime',
   }
 );
 module.exports = UserAnime;
