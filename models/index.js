@@ -1,13 +1,22 @@
 const User = require('./User');
 const Anime = require('./Anime');
+const UserAnime = require('./UserAnime');
 
-User.hasMany(Anime, {
-  foreignKey: 'user_id',
-  onDelete: 'CASCADE',
+User.belongsToMany(Anime, {
+  through: {
+    model: UserAnime,
+    unique: false,
+  },
+  as: 'users_anime',
 });
 
-Anime.belongsTo(User, {
-  foreignKey: 'user_id',
+Anime.belongsToMany(User, {
+  through: {
+    model: UserAnime,
+    unique: false,
+  },
+  //Alias name for when data is retrieved
+  as: 'anime_list_for_each_user',
 });
 
-module.exports = { User, Anime };
+module.exports = { User, UserAnime, Anime };
