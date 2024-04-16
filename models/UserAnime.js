@@ -5,6 +5,38 @@ const sequelize = require('../config/connection');
 class UserAnime extends Model {}
 
 UserAnime.init(
-    {
-        
-    })
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'user',
+        key: 'id',
+        unique: false,
+      },
+    },
+    anime_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'anime',
+        key: 'id',
+        unique: false,
+      },
+    },
+  },
+  {
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'userAnime',
+  }
+);
+module.exports = UserAnime;

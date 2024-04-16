@@ -1,7 +1,6 @@
 const { Model, DataType } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
-const Anime = require('./Anime');
 
 class User extends Model {
   checkPassword(loginPw) {
@@ -58,8 +57,5 @@ User.init(
     modelName: 'user',
   }
 );
-
-// many to many relationship with the Anime model through the connection table useranime
-User.belongsToMany(Anime, { through: 'UserAnime' });
 
 module.exports = User;
