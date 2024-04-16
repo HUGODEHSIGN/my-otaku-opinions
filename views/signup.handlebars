@@ -1,10 +1,10 @@
-<form id='login-form'>
+<form id='signup-form'>
   {{! username }}
   <div class='mb-3'>
-    <label for='login-username' class='form-label'>Username</label>
+    <label for='signup-username' class='form-label'>Username</label>
     <input
       type='text'
-      id='login-username'
+      id='signup-username'
       class='form-control'
       aria-describedby='usernameHelpBlock'
     />
@@ -12,10 +12,10 @@
   </div>
   {{! email }}
   <div class='mb-3'>
-    <label for='login-email' class='form-label'>Email</label>
+    <label for='signup-email' class='form-label'>Email</label>
     <input
       type='email'
-      id='login-email'
+      id='signup-email'
       class='form-control'
       aria-describedby='emailHelpBlock'
     />
@@ -23,15 +23,14 @@
   </div>
   {{! password }}
   <div class='mb-3'>
-    <label for='login-password' class='form-label'>Password</label>
+    <label for='signup-password' class='form-label'>Password</label>
     <input
       type='password'
-      id='login-password'
+      id='signup-password'
       class='form-control'
       aria-describedby='passwordHelpBlock'
     />
 
   </div>
-  <p><a class='link-opacity-100' href='/signup'>Don't have an account? Sign Up!</a></p>
-  <button type='submit' class='btn btn-primary'>Log In</button>
+  <button type='submit' class='btn btn-primary'>Sign Up</button>
 </form>
