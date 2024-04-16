@@ -23,13 +23,6 @@ Anime.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
-    },
     api_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -43,5 +36,8 @@ Anime.init(
     modelName: 'anime',
   }
 );
+// i took out the user_id since it would only be for one user
+// many to many relationship for the user; so that anime can have many users through their joint useranime.js connection file
+Anime.belongsToMany(User, { through: 'UserAnime' });
 
 module.exports = Anime;
