@@ -1,0 +1,36 @@
+<form id='login-form'>
+  {{! username }}
+  <div class='mb-3'>
+    <label for='login-username' class='form-label'>Username</label>
+    <input
+      type='text'
+      id='login-username'
+      class='form-control'
+      aria-describedby='usernameHelpBlock'
+    />
+
+  </div>
+  {{! email }}
+  <div class='mb-3'>
+    <label for='login-email' class='form-label'>Email</label>
+    <input
+      type='email'
+      id='login-email'
+      class='form-control'
+      aria-describedby='emailHelpBlock'
+    />
+
+  </div>
+  {{! password }}
+  <div class='mb-3'>
+    <label for='login-password' class='form-label'>Password</label>
+    <input
+      type='password'
+      id='login-password'
+      class='form-control'
+      aria-describedby='passwordHelpBlock'
+    />
+
+  </div>
+  <button type='submit' class='btn btn-primary'>Log In</button>
+</form>
