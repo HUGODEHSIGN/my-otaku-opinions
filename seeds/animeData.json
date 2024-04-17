@@ -1,14 +1,20 @@
 [
   {
     "title": "Sousou no Frieren",
-    "description": "During their decade-long quest to defeat the Demon King, the members of the hero's party—Himmel himself, the priest Heiter, the dwarf warrior Eisen, and the elven mage Frieren—forge bonds through adventures and battles, creating unforgettable precious memories for most of them."
+    "synopsis": "During their decade-long quest to defeat the Demon King, the members of the hero's party—Himmel himself, the priest Heiter, the dwarf warrior Eisen, and the elven mage Frieren—forge bonds through adventures and battles, creating unforgettable precious memories for most of them.",
+    "img_url": "https://cdn.myanimelist.net/images/anime/1015/138006.webp",
+    "api_id": 52991
   },
   {
     "title": "Fullmetal Alchemist: Brotherhood",
-    "description": "After a horrific alchemy experiment goes wrong in the Elric household, brothers Edward and Alphonse are left in a catastrophic new reality. Ignoring the alchemical principle banning human transmutation, the boys attempted to bring their recently deceased mother back to life."
+    "synopsis": "After a horrific alchemy experiment goes wrong in the Elric household, brothers Edward and Alphonse are left in a catastrophic new reality. Ignoring the alchemical principle banning human transmutation, the boys attempted to bring their recently deceased mother back to life.",
+    "img_url": "https://cdn.myanimelist.net/images/anime/1208/94745.jpg",
+    "api_id": 5114
   },
   {
     "title": "Gintama",
-    "description": "Gintoki, Shinpachi, and Kagura return as the fun-loving but broke members of the Yorozuya team! Living in an alternate-reality Edo, where swords are prohibited and alien overlords have conquered Japan, they try to thrive on doing whatever work they can get their hands on."
+    "synopsis": "Gintoki, Shinpachi, and Kagura return as the fun-loving but broke members of the Yorozuya team! Living in an alternate-reality Edo, where swords are prohibited and alien overlords have conquered Japan, they try to thrive on doing whatever work they can get their hands on.",
+    "img_url": "https://cdn.myanimelist.net/images/anime/3/72078.webp",
+    "api_id": 28977
   }
 ]

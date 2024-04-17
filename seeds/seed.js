@@ -12,16 +12,19 @@ const seedDB = async () => {
     returning: true,
   });
 
-  for (const anime of animeData) {
-    await Anime.create({
-      ...anime,
-      api_id: users[Math.floor(Math.random() * users.length)].id,
-    });
-  }
+  // for (const anime of animeData) {
+  //   await Anime.create(anime);
+  // }
+
+  const anime = await Anime.bulkCreate(animeData, {
+    individualHooks: true,
+    returning: true,
+  });
 
   for (let i = 0; i < users.length; i++) {
     // Create a new user anime with random user_id
     await UserAnime.create({
+      anime_id: anime[Math.floor(Math.random() * anime.length)].id,
       user_id: users[Math.floor(Math.random() * users.length)].id,
     }).catch((err) => {
       console.log(err);

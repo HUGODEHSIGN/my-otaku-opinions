@@ -15,13 +15,17 @@ Anime.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
+    synopsis: {
       type: DataTypes.TEXT,
     },
     data_added: {
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
+    },
+    img_url: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     api_id: {
       type: DataTypes.INTEGER,
