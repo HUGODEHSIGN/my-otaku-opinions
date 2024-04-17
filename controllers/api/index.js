@@ -5,5 +5,5 @@ const logoutRoutes = require('./logoutRoutes.js');
 
 router.use('/login', loginRoutes);
 router.use('/signup', signupRoutes);
-router.use('./logout', logoutRoutes);
+router.use('/logout', logoutRoutes);
 module.exports = router;
