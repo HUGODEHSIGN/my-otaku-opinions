@@ -3,6 +3,8 @@
 }
 
 .embla__viewport {
+  background-color: #b3b3b3;
+  border: 2px solid #ffffff;
   max-height: 400px;
   overflow: hidden;
 }
