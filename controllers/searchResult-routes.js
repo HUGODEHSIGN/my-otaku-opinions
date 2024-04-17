@@ -20,7 +20,9 @@ router.get('/', async (req, res) => {
         data.favorites
     );
     console.log(apiData);
-    res.status(200).render('searchResults', { apiData });
+    res
+      .status(200)
+      .render('searchResults', { apiData, logged_in: req.session.logged_in });
   } catch (err) {
     console.error(err);
   }
