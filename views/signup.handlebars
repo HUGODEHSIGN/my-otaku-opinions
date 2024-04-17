@@ -1,21 +1,6 @@
 <form id='signup-form'>
+  {{!-- username --}}
   <legend>Sign Up</legend>
-  {{! username }}
-  {{! <div class='mb-3'>
-    <label for='signup-username' class='form-label'>Username</label>
-    <input
-      type='text'
-      id='signup-username'
-      class='form-control is-valid'
-      aria-describedby='usernameHelpBlock'
-      placeholder='username'
-      required
-    />
-     <div class='valid-feedback'>
-      Looks good!
-    </div> 
-  </div> }}
-
   <div class='mb-3'>
     <label for='signup-username' class='form-label'>Username</label>
     <div class='input-group has-validation'>
@@ -27,23 +12,9 @@
         required
       />
       <div id='usernameHelpBlock' class='invalid-feedback'>
-        Please choose a username.
+        Please enter a valid username.
       </div>
     </div>
   </div>
 
-  {{! password }}
-  <div class='mb-3'>
-    <label for='signup-password' class='form-label'>Password</label>
-    <input
-      type='password'
-      id='signup-password'
-      class='form-control'
-      aria-describedby='passwordHelpBlock'
-    />
-
-  </div>
-  <button type='submit' class='btn btn-primary'>Sign Up</button>
-</form>
-
-<script src='./js/signup.js'></script>
+  
