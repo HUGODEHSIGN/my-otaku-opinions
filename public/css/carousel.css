@@ -13,8 +13,7 @@
 }
 
 .embla__slide {
-  flex: 0 0 50%;
-  min-width: 0;
+  flex: 0 0 10%;
   margin-right: 20px;
 }
 
