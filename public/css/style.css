@@ -1,3 +1,7 @@
+body {
+  background-color: #424242;
+}
+
 .card-body {
   background-color: #111103;
 }
@@ -22,7 +26,7 @@
 }
 
 .primary-color:hover {
-  background-color: #e1d2fd;
+  background-color: #caadff;
 }
 
 .primary-color:active {
