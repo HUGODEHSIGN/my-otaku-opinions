@@ -16,7 +16,7 @@ Anime.init(
       allowNull: false,
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
     },
     data_added: {
       type: DataTypes.DATE,
