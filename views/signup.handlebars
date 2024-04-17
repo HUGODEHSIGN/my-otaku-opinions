@@ -1,16 +1,37 @@
 <form id='signup-form'>
   <legend>Sign Up</legend>
   {{! username }}
-  <div class='mb-3'>
+  {{! <div class='mb-3'>
     <label for='signup-username' class='form-label'>Username</label>
     <input
       type='text'
       id='signup-username'
-      class='form-control'
+      class='form-control is-valid'
       aria-describedby='usernameHelpBlock'
+      placeholder='username'
+      required
     />
+     <div class='valid-feedback'>
+      Looks good!
+    </div> 
+  </div> }}
 
+  <div class='mb-3'>
+    <label for='signup-username' class='form-label'>Username</label>
+    <div class='input-group has-validation'>
+      <input
+        type='text'
+        class='form-control is-invalid'
+        id='signup-username'
+        aria-describedby='usernameHelpBlock'
+        required
+      />
+      <div id='usernameHelpBlock' class='invalid-feedback'>
+        Please choose a username.
+      </div>
+    </div>
   </div>
+
   {{! email }}
   <div class='mb-3'>
     <label for='signup-email' class='form-label'>Email</label>
