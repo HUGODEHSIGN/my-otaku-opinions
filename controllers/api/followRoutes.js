@@ -9,13 +9,14 @@ router.post('/', async (req, res) => {
 
     const apiRes = await fetch(`https://api.jikan.moe/v4/anime/${malId}`);
     const apiData = await apiRes.json();
-    const { images, title, synopsis } = await apiData.data;
+    const { images, title, synopsis, score } = await apiData.data;
 
     const [animeData, created] = await Anime.findOrCreate({
       where: { api_id: malId },
       defaults: {
         title,
         synopsis,
+        score,
         img_url: images.webp.image_url,
         api_id: malId,
       },

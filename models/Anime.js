@@ -18,6 +18,9 @@ Anime.init(
     synopsis: {
       type: DataTypes.TEXT,
     },
+    score: {
+      type: DataTypes.DECIMAL,
+    },
     data_added: {
       type: DataTypes.DATE,
       allowNull: false,
