@@ -23,8 +23,11 @@ router.post('/', async (req, res) => {
     const anime = animeData.dataValues;
 
     const userAnime = await UserAnime.findOrCreate({
-      anime_id: anime.id,
-      user_id: userId,
+      where: { anime_id: anime.id, user_id: userId },
+      defaults: {
+        anime_id: anime.id,
+        user_id: userId,
+      },
     });
 
     console.log('THIS CONSOLE LOG', userAnime);
