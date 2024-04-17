@@ -21,15 +21,6 @@ UserAnime.init(
         unique: false,
       },
     },
-    anime_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      references: {
-        model: 'anime',
-        key: 'id',
-        unique: false,
-      },
-    },
   },
   {
     sequelize,
