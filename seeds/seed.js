@@ -19,6 +19,8 @@ const seedDB = async () => {
     await UserAnime.create({
       user_id: users[Math.floor(Math.random() * users.length)].id,
       api_id: Math.floor(Math.random() * anime.length),
+    }).catch((err) => {
+      console.log(err);
     });
   }
 
