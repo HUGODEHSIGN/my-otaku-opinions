@@ -12,6 +12,15 @@ UserAnime.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    anime_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'anime',
+        key: 'id',
+        unique: false,
+      },
+    },
     user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
