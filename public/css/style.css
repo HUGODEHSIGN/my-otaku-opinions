@@ -1,6 +1,9 @@
 .card-body {
   background-color: #111103;
 }
+.short-card-body {
+  height: 30%;
+}
 
 .card-text {
   color: #ffffff;
