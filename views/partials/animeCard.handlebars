@@ -1,8 +1,12 @@
-{{! title }}
-<div>{{title}}</div>
+<div class='anime-card'>
+  <div class='anime-card-content'>
+    <div class='anime-card-text'>
+      <h3 class='anime-card-title'>{{title}}</h3>
 
-{{! score }}
-<div>{{score}}</div>
+      <h4 class='anime-card-score'>{{score}}</h4>
+    </div>
+    <button class='btn anime-card-btn'>Follow</button>
+  </div>
 
-{{! img }}
-<img src='{{images.jpg.image_url}}' alt='' />
+  <img src='{{images.webp.large_image_url}}' alt='' class='anime-card-image' />
+</div>
