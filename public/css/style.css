@@ -15,10 +15,26 @@
 }
 
 .secondary-color {
-  background-color: rgb(255, 73, 128);
+  background-color: #ff4980;
 }
 
-.anime-card {
+.primary-color:hover {
+  background-color: #e1d2fd;
+}
+
+.primary-color:active {
+  background-color: #fda0bc;
+}
+
+.secondary-color:hover {
+  background-color: #ff83a8;
+}
+
+.secondary-color:active {
+  background-color: #f0e9fc;
+}
+
+.sec .anime-card {
   position: relative;
   background-color: #111103;
   padding: 2rem;
@@ -62,8 +78,10 @@
     width: 400px;
     top: -30%;
     left: 0;
-    mask-image: linear-gradient(to right,
-        rgba(17, 17, 3, 1),
-        rgba(17, 17, 3, 0));
+    mask-image: linear-gradient(
+      to right,
+      rgba(17, 17, 3, 1),
+      rgba(17, 17, 3, 0)
+    );
   }
 }
