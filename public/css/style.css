@@ -17,3 +17,50 @@
 .secondary-color {
   background-color: rgb(255, 73, 128);
 }
+
+.anime-card {
+  position: relative;
+  background-color: #111103;
+  padding: 2rem;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  .anime-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    height: 12rem;
+    .anime-card-text {
+      .anime-card-title {
+        text-align: right;
+        z-index: 1;
+        color: #ffffff;
+        max-width: 35rem;
+      }
+      .anime-card-score {
+        text-align: right;
+        color: #a086d2;
+        z-index: 1;
+      }
+    }
+    .anime-card-btn {
+      background-color: #a086d2;
+      transition: 300ms ease all;
+    }
+    .anime-card-btn:hover {
+      background-color: #816baa;
+    }
+  }
+
+  .anime-card-image {
+    position: absolute;
+    width: 400px;
+    top: -30%;
+    left: 0;
+    mask-image: linear-gradient(
+      to right,
+      rgba(17, 17, 3, 1),
+      rgba(17, 17, 3, 0)
+    );
+  }
+}
