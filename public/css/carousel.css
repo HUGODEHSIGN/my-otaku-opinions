@@ -3,6 +3,7 @@
 }
 .embla__container {
   display: flex;
+  gap: 20px;
 }
 .embla__slide {
   flex: 0 0 50%;
