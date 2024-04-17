@@ -1,12 +1,12 @@
 <form id='signup-form'>
-  {{!-- username --}}
+  {{! username }}
   <legend>Sign Up</legend>
   <div class='mb-3'>
     <label for='signup-username' class='form-label'>Username</label>
     <div class='input-group has-validation'>
       <input
         type='text'
-        class='form-control is-valid'
+        class='form-control is-invalid'
         id='signup-username'
         aria-describedby='usernameHelpBlock'
         required
@@ -17,7 +17,7 @@
     </div>
   </div>
 
-  {{!-- password --}}
+  {{! password }}
   <div class='mb-3'>
     <label for='signup-password' class='form-label'>Password</label>
     <div class='input-group has-validation'>
@@ -26,24 +26,20 @@
         class='form-control is-invalid'
         id='signup-password'
         aria-describedby='passwordHelpBlock'
-        pattern=".{8,}"
+        pattern='.{8,}'
         required
       />
       <div id='passwordHelpBlock' class='invalid-feedback'>
         Please input a password that is at least 8 characters long.
       </div>
     </div>
-    <button type='submit' class='btn btn-primary'>Sign Up</button>
+  </div>
+  <button type='submit' class='btn btn-primary'>Sign Up</button>
 </form>
 <script src='./js/signup.js'></script>
 
-
-
-
-
-
 {{! username }}
-  {{! <div class='mb-3'>
+{{! <div class='mb-3'>
     <label for='signup-username' class='form-label'>Username</label>
     <input
       type='text'
@@ -57,9 +53,9 @@
       Looks good!
     </div> 
   </div> }}
-  
-  {{! password original}}
-  {{! <div class='mb-3'>
+
+{{! password original}}
+{{! <div class='mb-3'>
     <label for='signup-password' class='form-label'>Password</label>
     <input
       type='password'
