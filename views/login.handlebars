@@ -8,20 +8,10 @@
       id='login-username'
       class='form-control'
       aria-describedby='usernameHelpBlock'
+      required
     />
-
   </div>
-  {{! email }}
-  <div class='mb-3'>
-    <label for='login-email' class='form-label'>Email</label>
-    <input
-      type='email'
-      id='login-email'
-      class='form-control'
-      aria-describedby='emailHelpBlock'
-    />
 
-  </div>
   {{! password }}
   <div class='mb-3'>
     <label for='login-password' class='form-label'>Password</label>
@@ -30,9 +20,12 @@
       id='login-password'
       class='form-control'
       aria-describedby='passwordHelpBlock'
+      required
     />
 
   </div>
   <p><a class='link-opacity-100' href='/signup'>Don't have an account? Sign Up!</a></p>
   <button type='submit' class='btn btn-primary'>Log In</button>
 </form>
+
+<script src='./js/login.js'></script>
