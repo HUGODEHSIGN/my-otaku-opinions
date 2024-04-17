@@ -7,7 +7,7 @@ const followRoutes = require('./followRoutes.js');
 
 router.use('/login', loginRoutes);
 router.use('/signup', signupRoutes);
-router.use('./logout', logoutRoutes);
+router.use('/logout', logoutRoutes);
 
 router.use('/follow', followRoutes);
 module.exports = router;

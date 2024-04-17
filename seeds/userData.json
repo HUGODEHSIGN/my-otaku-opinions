@@ -1,14 +1,14 @@
 [
   {
-    "name": "UncleJessie",
+    "username": "UncleJessie",
     "password": "password987"
   },
   {
-    "name": "Joey",
+    "username": "Joey",
     "password": "password123"
   },
   {
-    "name": "Blacklist",
+    "username": "Blacklist",
     "password": "password135"
   }
 ]
