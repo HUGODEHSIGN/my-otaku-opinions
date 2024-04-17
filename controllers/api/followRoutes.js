@@ -22,7 +22,7 @@ router.post('/', async (req, res) => {
     });
     const anime = animeData.dataValues;
 
-    const userAnime = await UserAnime.create({
+    const userAnime = await UserAnime.findOrCreate({
       anime_id: anime.id,
       user_id: userId,
     });
