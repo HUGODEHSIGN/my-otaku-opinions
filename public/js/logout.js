@@ -9,7 +9,7 @@ const logoutHandler = async () => {
   if (response.ok) {
     document.location.replace('/login');
   } else {
-    alert('Loging Failed');
+    alert('Failed to log out');
   }
 };
 
