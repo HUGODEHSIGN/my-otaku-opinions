@@ -13,10 +13,7 @@ const seedDB = async () => {
   });
 
   for (const anime of animeData) {
-    await Anime.create({
-      ...anime,
-      api_id: users[Math.floor(Math.random() * users.length)].id,
-    });
+    await Anime.create(anime);
   }
 
   for (let i = 0; i < users.length; i++) {
