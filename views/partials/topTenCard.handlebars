@@ -1,20 +1,22 @@
 <div class='embla__slide'>
-  <div class='carousel-card'>
-    <div class='carousel-card-rank-bg'><h2
-        class='carousel-card-rank'
-      >{{rank}}</h2></div>
-    <img src='{{image_url}}' class='carousel-card-img' />
-    <div class='carousel-card-content'>
-      <div>
-        <h3 class='carousel-card-title'>{{title}}</h3>
-        <p class='carousel-card-score'>{{score}}</p>
+  <a href='/details/{{mal_id}}'>
+    <div class='carousel-card'>
+      <div class='carousel-card-rank-bg'><h2
+          class='carousel-card-rank'
+        >{{rank}}</h2></div>
+      <img src='{{image_url}}' class='carousel-card-img' />
+      <div class='carousel-card-content'>
+        <div>
+          <h3 class='carousel-card-title'>{{title}}</h3>
+          <p class='carousel-card-score'>{{score}}</p>
+        </div>
+        {{#if @root.logged_in}}
+          <button
+            class='btn carousel-card-btn follow-btn'
+            data-mal-id='{{mal_id}}'
+          >Follow</button>
+        {{/if}}
       </div>
-      {{#if @root.logged_in}}
-        <button
-          class='btn carousel-card-btn follow-btn'
-          data-mal-id='{{mal_id}}'
-        >Follow</button>
-      {{/if}}
     </div>
-  </div>
+  </a>
 </div>

@@ -1,17 +1,19 @@
-<div class='anime-card'>
-  <div class='anime-card-content'>
-    <div class='anime-card-text'>
-      <h3 class='anime-card-title'>{{title}}</h3>
+<a href='/details/{{mal_id}}'>
+  <div class='anime-card'>
+    <div class='anime-card-content'>
+      <div class='anime-card-text'>
+        <h3 class='anime-card-title'>{{title}}</h3>
 
-      <h4 class='anime-card-score'>{{score}}</h4>
+        <h4 class='anime-card-score'>{{score}}</h4>
+      </div>
+
+      <button
+        class='btn anime-card-btn follow-btn'
+        data-mal-id='{{mal_id}}'
+      >Follow</button>
+
     </div>
 
-    <button
-      class='btn anime-card-btn follow-btn'
-      data-mal-id='{{mal_id}}'
-    >Follow</button>
-
+    <img src='{{img_url}}' alt='' class='anime-card-image' />
   </div>
-
-  <img src='{{img_url}}' alt='' class='anime-card-image' />
-</div>
+</a>
