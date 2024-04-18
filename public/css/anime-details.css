@@ -1,19 +1,26 @@
+:root {
+  --dark-color: #111103;
+  --light-color: #ffffff;
+  --light-purple: #816baa;
+  --dark-purple: #8e3ac1;
+}
+
 .anime-additional-info {
-  color: #ffffff;
+  color: var(--light-color);
   margin: 0;
   margin-bottom: 1rem;
 }
 
 .anime-badge {
-  background-color: #8e3ac1;
+  background-color: var(--dark-purple);
   margin-right: 0.5rem;
   padding: 0.5rem;
   border-radius: 0.375rem;
 }
 
 .anime-year {
-  background-color: white;
-  color: black;
+  background-color: var(--light-color);
+  color: var(--dark-color);
 }
 
 .anime-details-container {
@@ -21,7 +28,7 @@
 }
 
 .anime-title {
-  color: white;
+  color: var(--light-color);
   margin: 0;
 }
 
@@ -35,22 +42,22 @@
 }
 
 .anime-details-btn {
-  background-color: #8e3ac1;
-  color: #ffffff;
+  background-color: var(--dark-purple);
+  color: var(--light-color);
 }
 
 .anime-score {
-  color: #8e3ac1;
+  color: var(--dark-purple);
   font-weight: bolder;
 }
 
 .anime-synopsis {
-  color: #ffffff;
+  color: var(--light-color);
   margin: 0;
   margin-top: 3rem;
 }
 
 .comment-header {
-  color: #ffffff;
-  border-bottom: 2px solid #8e3ac1;
+  color: var(--light-color);
+  border-bottom: 2px solid var(--dark-purple);
 }
