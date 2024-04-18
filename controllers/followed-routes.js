@@ -1,8 +1,9 @@
 const { User, Anime } = require('../models');
+const withAuth = require('../utils/auth.js');
 
 const router = require('express').Router();
 
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
   const userId = req.session.user_id;
   try {
     const followedData = await User.findByPk(userId, {
