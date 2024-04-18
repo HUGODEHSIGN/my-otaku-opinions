@@ -1,3 +1,21 @@
+.anime-additional-info {
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.anime-badge {
+  background-color: #8e3ac1;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+}
+
+.anime-year {
+  background-color: white;
+  color: black;
+}
+
 .anime-title {
   color: white;
   margin: 0;
@@ -12,13 +30,20 @@
   border-radius: 0.375rem;
 }
 
+.anime-details-btn {
+  background-color: #8e3ac1;
+  color: #ffffff;
+}
+
 .anime-score {
   color: #8e3ac1;
+  font-weight: bolder;
 }
 
 .anime-synopsis {
   color: #ffffff;
   margin: 0;
+  margin-top: 3rem;
 }
 
 .comment-header {

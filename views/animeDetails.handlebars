@@ -1,1 +1,37 @@
-<div>This is the anime details page</div>
+<link rel='stylesheet' href='/css/anime-details.css' />
+
+<div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-4 col-md-3 d-flex flex-column gap-2">
+          <img
+            class="anime-img"
+            src="{{animeDetails.image_url}}"
+            alt=""
+          />
+          <button class="btn anime-details-btn mb-2">Follow</button>
+        </div>
+        <div class="col-12 col-sm-8 col-md-9 d-flex flex-column">
+          
+            <div class="anime-additional-info d-flex">
+              <p class="anime-badge anime-year">{{animeDetails.year}}</p>
+              {{#each animeDetails.genres as |genre|}}
+              <p class="anime-badge">{{genre}}</p>
+
+              {{/each}}
+            </div>
+
+            <h2 class="anime-title">{{animeDetails.title}}</h2>
+            <p class="anime-title-en">{{animeDetails.englishTitle}}</p>
+            <h3 class="anime-score">{{animeDetails.score}}</h3>
+          </div>
+        </div>
+        <div class="row">
+          <p class="anime-synopsis">
+            {{animeDetails.synopsis}}
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <h3 class="comment-header mt-5 p-2 text-center">Comments</h3>
+      </div>
+    </div>
