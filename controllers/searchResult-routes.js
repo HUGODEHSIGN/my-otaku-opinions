@@ -9,16 +9,25 @@ router.get('/', async (req, res) => {
       `https://api.jikan.moe/v4/anime?q=${queryParams}&order_by=score&sort=desc`
     );
     const apiData = await result.json();
-    apiData.data = await apiData.data.filter(
-      (data) =>
-        data.rating &&
-        data.score &&
-        data.scored_by &&
-        data.rank &&
-        data.popularity &&
-        data.members &&
-        data.favorites
-    );
+    apiData.data = await apiData.data
+      .filter(
+        (data) =>
+          data.rating &&
+          data.score &&
+          data.scored_by &&
+          data.rank &&
+          data.popularity &&
+          data.members &&
+          data.favorites
+      )
+      .map((data) => {
+        return {
+          mal_id: data.mal_id,
+          title: data.title,
+          score: data.score,
+          img_url: data.images.webp.large_image_url,
+        };
+      });
     console.log(apiData);
     res
       .status(200)

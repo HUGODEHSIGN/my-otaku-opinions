@@ -1,5 +1,16 @@
+body {
+  background-color: #111103;
+}
+
+.main-header {
+  margin-left: 2px;
+}
+
 .card-body {
   background-color: #111103;
+}
+.short-card-body {
+  height: 30%;
 }
 
 .card-text {
@@ -11,11 +22,27 @@
 }
 
 .primary-color {
-  background-color: #a086d2;
+  background-color: #8e3ac1;
 }
 
-.secondary-color {
-  background-color: rgb(255, 73, 128);
+.primary-color-text {
+  color: #a086d2;
+}
+
+.primary-color:hover {
+  background-color: #816baa;
+}
+
+.homepage-container {
+  margin-top: 20vh;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #816baa;
 }
 
 .anime-card {
@@ -48,7 +75,7 @@
     }
 
     .anime-card-btn {
-      background-color: #a086d2;
+      background-color: #8e3ac1;
       transition: 300ms ease all;
     }
 
@@ -62,8 +89,10 @@
     width: 400px;
     top: -30%;
     left: 0;
-    mask-image: linear-gradient(to right,
-        rgba(17, 17, 3, 1),
-        rgba(17, 17, 3, 0));
+    mask-image: linear-gradient(
+      to right,
+      rgba(17, 17, 3, 1),
+      rgba(17, 17, 3, 0)
+    );
   }
 }

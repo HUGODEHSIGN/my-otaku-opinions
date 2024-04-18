@@ -1,1 +1,9 @@
-<h1>This is the anime followed pages</h1>
+<div class="d-flex flex-column gap-2">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+        {{#each animeData as |anime|}}
+        <div class="col">
+            {{> animeCard}}
+        </div>
+        {{/each}}
+    </div>
+</div>

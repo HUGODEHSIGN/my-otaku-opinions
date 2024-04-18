@@ -1,50 +1,11 @@
 <form id='signup-form'>
-  {{!-- username --}}
-  <legend>Sign Up</legend>
+  <legend class='text-white'>Sign Up</legend>
+  {{! username }}
   <div class='mb-3'>
-    <label for='signup-username' class='form-label'>Username</label>
-    <div class='input-group has-validation'>
-      <input
-        type='text'
-        class='form-control is-valid'
-        id='signup-username'
-        aria-describedby='usernameHelpBlock'
-        required
-      />
-      <div id='usernameHelpBlock' class='invalid-feedback'>
-        Please enter a valid username.
-      </div>
-    </div>
-  </div>
-
-  {{!-- password --}}
-  <div class='mb-3'>
-    <label for='signup-password' class='form-label'>Password</label>
-    <div class='input-group has-validation'>
-      <input
-        type='password'
-        class='form-control is-invalid'
-        id='signup-password'
-        aria-describedby='passwordHelpBlock'
-        pattern=".{8,}"
-        required
-      />
-      <div id='passwordHelpBlock' class='invalid-feedback'>
-        Please input a password that is at least 8 characters long.
-      </div>
-    </div>
-    <button type='submit' class='btn btn-primary'>Sign Up</button>
-</form>
-<script src='./js/signup.js'></script>
-
-
-
-
-
-
-{{! username }}
-  {{! <div class='mb-3'>
-    <label for='signup-username' class='form-label'>Username</label>
+    <label
+      for='signup-username'
+      class='form-label primary-color-text'
+    >Username</label>
     <input
       type='text'
       id='signup-username'
@@ -53,14 +14,15 @@
       placeholder='username'
       required
     />
-     <div class='valid-feedback'>
-      Looks good!
-    </div> 
-  </div> }}
-  
-  {{! password original}}
-  {{! <div class='mb-3'>
-    <label for='signup-password' class='form-label'>Password</label>
+
+  </div>
+
+  {{! password }}
+  <div class='mb-3'>
+    <label
+      for='signup-password'
+      class='form-label primary-color-text'
+    >Password</label>
     <input
       type='password'
       id='signup-password'
@@ -69,4 +31,5 @@
     />
 
   </div>
-  <button type='submit' class='btn btn-primary'>Sign Up</button> }}
+  <button type='submit' class='btn primary-color'>Sign Up</button>
+</form>
