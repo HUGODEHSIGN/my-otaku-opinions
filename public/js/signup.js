@@ -54,6 +54,24 @@ async function validateUsername(username) {
   }
 }
 
+// Function to validate password
+function validatePassword(password) {
+  const passwordField = document.getElementById('signup-password');
+  const passwordHelpBlock = document.getElementById('passwordHelpBlock');
+
+  if (password.length >= 8) {
+    passwordField.classList.remove('is-invalid');
+    passwordField.classList.add('is-valid');
+    passwordHelpBlock.style.display = 'none';
+    return true;
+  } else {
+    passwordField.classList.remove('is-valid');
+    passwordField.classList.add('is-invalid');
+    passwordHelpBlock.style.display = 'block';
+    return false;
+  }
+}
+
 document
   .querySelector('#signup-form')
   .addEventListener('submit', signupFormHandler);
