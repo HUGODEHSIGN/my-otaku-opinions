@@ -10,6 +10,10 @@ body {
   background-color: var(--dark-color);
 }
 
+a {
+  text-decoration: none;
+}
+
 .main-header {
   margin-left: 10px;
 }
@@ -121,11 +125,9 @@ body {
     width: 400px;
     top: -30%;
     left: 0;
-    mask-image: linear-gradient(
-      to right,
-      rgba(17, 17, 3, 1),
-      rgba(17, 17, 3, 0)
-    );
+    mask-image: linear-gradient(to right,
+        rgba(17, 17, 3, 1),
+        rgba(17, 17, 3, 0));
   }
 }
 
@@ -140,6 +142,7 @@ body {
 #search-icon {
   color: #8e3ac1;
 }
+
 .short-card-body {
   height: 30%;
 }
