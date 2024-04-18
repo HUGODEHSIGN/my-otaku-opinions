@@ -2,6 +2,10 @@ body {
   background-color: #111103;
 }
 
+.t-margin {
+  margin-right: 8px;
+}
+
 .main-header {
   margin-left: 2px;
 }
