@@ -9,15 +9,12 @@
         <h3 class='carousel-card-title'>{{title}}</h3>
         <p class='carousel-card-score'>{{score}}</p>
       </div>
-      <button
-        class='btn carousel-card-btn follow-btn'
-        data-mal-id='{{mal_id}}'
-      >Follow</button>
+      {{#if @root.logged_in}}
+        <button
+          class='btn carousel-card-btn follow-btn'
+          data-mal-id='{{mal_id}}'
+        >Follow</button>
+      {{/if}}
     </div>
-
   </div>
 </div>
-
-{{!-- <div>{{title}}</div>
-<div>{{score}}</div>
-<img src='{{image_url}}' alt='' /> --}}
