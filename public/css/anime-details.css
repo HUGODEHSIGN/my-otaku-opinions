@@ -1,0 +1,27 @@
+.anime-title {
+  color: white;
+  margin: 0;
+}
+
+.anime-title-en {
+  color: #a7a7a7;
+  font-weight: 500;
+}
+
+.anime-img {
+  border-radius: 0.375rem;
+}
+
+.anime-score {
+  color: #8e3ac1;
+}
+
+.anime-synopsis {
+  color: #ffffff;
+  margin: 0;
+}
+
+.comment-header {
+  color: #ffffff;
+  border-bottom: 2px solid #8e3ac1;
+}
