@@ -8,14 +8,19 @@ router.get('/:mal_id', async (req, res) => {
 
     const detailsData = await response.json();
 
+    console.log(detailsData);
+
+    const data = detailsData.data;
+
     const animeDetails = {
-      mal_id: detailsData.mal_id,
-      title: detailsData.title,
-      score: detailsData.score,
-      synopsis: detailsData.synopsis,
-      image_url: detailsData.images.webp.large_image_url,
-      year: detailsData.year,
-      genres: [detailsData.genres[0].name, detailsData.genres[1].name],
+      mal_id: data.mal_id,
+      title: data.title,
+      englishTitle: data.title_english,
+      score: data.score,
+      synopsis: data.synopsis,
+      image_url: data.images.webp.large_image_url,
+      year: data.year,
+      genres: data.genres.map((genre) => genre.name),
     };
 
     console.log(animeDetails);
