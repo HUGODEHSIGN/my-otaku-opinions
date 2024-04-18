@@ -1,8 +1,11 @@
 <form id='login-form'>
-  <legend>Log In</legend>
+  <legend class='text-white'>Log In</legend>
   {{! username }}
   <div class='mb-3'>
-    <label for='login-username' class='form-label'>Username</label>
+    <label
+      for='login-username'
+      class='form-label primary-color-text'
+    >Username</label>
     <input
       type='text'
       id='login-username'
@@ -14,7 +17,10 @@
 
   {{! password }}
   <div class='mb-3'>
-    <label for='login-password' class='form-label'>Password</label>
+    <label
+      for='login-password'
+      class='form-label primary-color-text'
+    >Password</label>
     <input
       type='password'
       id='login-password'
@@ -24,8 +30,9 @@
     />
 
   </div>
-  <p><a class='link-opacity-100' href='/signup'>Don't have an account? Sign Up!</a></p>
-  <button type='submit' class='btn btn-primary'>Log In</button>
+  <p><a class='link-opacity-100 primary-color-text' href='/signup'>Don't have an
+      account? Sign Up!</a></p>
+  <button type='submit' class='btn primary-color text-white'>Log In</button>
 </form>
 
 <script src='./js/login.js'></script>
