@@ -62,8 +62,10 @@
     width: 400px;
     top: -30%;
     left: 0;
-    mask-image: linear-gradient(to right,
-        rgba(17, 17, 3, 1),
-        rgba(17, 17, 3, 0));
+    mask-image: linear-gradient(
+      to right,
+      rgba(17, 17, 3, 1),
+      rgba(17, 17, 3, 0)
+    );
   }
 }
