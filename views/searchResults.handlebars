@@ -1,5 +1,11 @@
 <div class="d-flex flex-column gap-2">
+{{#if logged_in}}
+{{#each apiData.data as |anime|}}
+{{> animeCardLoggedIn}}
+{{/each}}
+{{else}}
 {{#each apiData.data as |anime|}}
 {{> animeCard}}
 {{/each}}
+{{/if}}
 </div>

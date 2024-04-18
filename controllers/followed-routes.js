@@ -17,7 +17,9 @@ router.get('/', async (req, res) => {
       };
     });
     console.log(animeData);
-    res.status(200).render('followed', { animeData });
+    res
+      .status(200)
+      .render('followed', { animeData, logged_in: req.session.logged_in });
   } catch (err) {
     console.error(err);
   }
