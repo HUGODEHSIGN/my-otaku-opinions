@@ -4,7 +4,7 @@ const loginFormHandler = async (event) => {
     .querySelector('#login-username')
     .value.toLowerCase()
     .trim();
-  const password = document.querySelector('#login-password').trim();
+  const password = document.querySelector('#login-password').value.trim();
 
   let response;
   if (username && password) {
