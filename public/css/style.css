@@ -3,7 +3,7 @@ body {
 }
 
 .main-header {
-  margin-left: 2px;
+  margin-left: 10px;
 }
 
 .card-body {
@@ -40,6 +40,10 @@ body {
 
 .nav-link {
   color: #ffffff;
+}
+
+.m-nav {
+  margin-left: 30px;
 }
 
 .nav-link:hover {
