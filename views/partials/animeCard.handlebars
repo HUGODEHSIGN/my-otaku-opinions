@@ -6,7 +6,12 @@
 
         <h4 class='anime-card-score'>{{score}}</h4>
       </div>
-
+      {{#if @root.logged_in}}
+        <button
+          class='btn anime-card-btn follow-btn'
+          data-mal-id='{{mal_id}}'
+        >Follow</button>
+      {{/if}}
     </div>
 
     <img src='{{img_url}}' alt='' class='anime-card-image' />
