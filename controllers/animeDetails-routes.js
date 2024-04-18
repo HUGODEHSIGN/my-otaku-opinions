@@ -1,29 +1,26 @@
 const router = require('express').Router();
 
-router.get('/', async (req, res) => {
+router.get('/:mal_id', async (req, res) => {
   try {
-    const queryParams = req.query.q;
+    const animeId = req.params.mal_id;
 
-    const response = await fetch(
-      `https://api.jikan.moe/v4/anime?q=${queryParams}&order_by=score&sort=desc`
-    );
+    const response = await fetch(`https://api.jikan.moe/v4/anime/${animeId}`);
 
     const detailsData = await response.json();
 
-    const animeDetails = await animeList.map((data) => {
-      return {
-        mal_id: data.mal_id,
-        title: data.title,
-        score: data.score,
-        synopsis: data.synopsis,
-        image_url: data.images.webp.large_image_url,
-        year: data.year,
-        genres: [data.genres[0].name, data.genres[1].name],
-      };
-    });
+    const animeDetails = {
+      mal_id: detailsData.mal_id,
+      title: detailsData.title,
+      score: detailsData.score,
+      synopsis: detailsData.synopsis,
+      image_url: detailsData.images.webp.large_image_url,
+      year: detailsData.year,
+      genres: [detailsData.genres[0].name, detailsData.genres[1].name],
+    };
+
     console.log(animeDetails);
 
-    res.status(200).render('anime-details', {
+    res.status(200).render('animeDetails', {
       animeDetails,
       logged_in: req.session.logged_in,
     });
