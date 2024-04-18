@@ -4,32 +4,42 @@
   <div class='mb-3'>
     <label
       for='signup-username'
-      class='form-label primary-color-text'
-    >Username</label>
-    <input
-      type='text'
-      id='signup-username'
-      class='form-control is-valid'
-      aria-describedby='usernameHelpBlock'
-      placeholder='username'
-      required
-    />
-
+      class='form-label primary-color-text input-group'
+    >
+      Username
+    </label>
+    <div class='input-group has-validation'>
+      <input
+        type='text'
+        id='signup-username'
+        class='form-control'
+        aria-describedby='usernameHelpBlock'
+        name='username'
+        oninput='validateUsername(this.value)'
+      />
+      <div id='usernameHelpBlock' class='invalid-feedback'></div>
+    </div>
   </div>
 
   {{! password }}
   <div class='mb-3'>
-    <label
-      for='signup-password'
-      class='form-label primary-color-text'
-    >Password</label>
-    <input
-      type='password'
-      id='signup-password'
-      class='form-control'
-      aria-describedby='passwordHelpBlock'
-    />
-
+    <label for='signup-password' class='form-label primary-color-text'>
+      Password
+    </label>
+    <div class='input-group has-validation'>
+      <input
+        type='password'
+        id='signup-password'
+        class='form-control'
+        aria-describedby='passwordHelpBlock'
+        name='password'
+        oninput='validatePassword(this.value)'
+      />
+      <div id='passwordHelpBlock' class='invalid-feedback'>
+        Please input a password that is at least 8 characters long.
+      </div>
+    </div>
   </div>
   <button type='submit' class='btn primary-color'>Sign Up</button>
 </form>
+<script src='/js/signup.js'></script>
