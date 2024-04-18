@@ -24,6 +24,7 @@
   .carousel-card-rank {
     width: fit-content;
     margin-bottom: 0.2rem;
+    color: #8e3ac1;
   }
 }
 
@@ -60,6 +61,8 @@
 
 .carousel-card-btn {
   background-color: #ffffff;
+  font-weight: bold;
+  color: #8e3ac1;
 }
 
 .carousel-card-btn:hover {
