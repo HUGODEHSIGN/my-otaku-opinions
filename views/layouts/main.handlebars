@@ -68,21 +68,29 @@
               {{#if logged_in}}
                 <li class='nav-item'>
                   <a
-                    class='nav-link active'
+                    class='nav-link nav-link-custom'
                     aria-current='page'
                     href='/followed'
                   >Follows</a>
                 </li>
-                <a class='nav-link' id='logout' href='#'>Logout</a>
+                <li class='nav-item'>
+                  <a
+                    class='nav-link nav-link-custom'
+                    id='logout'
+                    href='#'
+                  >Logout</a>
+                </li>
               {{else}}
                 <li class='nav-item'>
                   <a
-                    class='nav-link active'
+                    class='nav-link nav-link-custom'
                     aria-current='page'
                     href='/login'
                   >Follows</a>
                 </li>
-                <a class='nav-link' href='/login'>Login</a>
+                <li class='nav-item'>
+                  <a class='nav-link nav-link-custom' href='/login'>Login</a>
+                </li>
               {{/if}}
             </li>
 

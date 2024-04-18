@@ -37,6 +37,14 @@ body {
   margin-top: 20vh;
 }
 
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #816baa;
+}
+
 .anime-card {
   position: relative;
   background-color: #111103;
