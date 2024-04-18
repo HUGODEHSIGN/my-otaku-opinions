@@ -1,10 +1,15 @@
-// original code
 const signupFormHandler = async (event) => {
   event.preventDefault();
-  const username = document.querySelector('#signup-username').value.trim();
+  const username = document
+    .querySelector('#signup-username')
+    .value.toLowerCase()
+    .trim();
   const password = document.querySelector('#signup-password').value.trim();
+  const isValidUsername = await validateUsername(username);
+  const isValidPassword = validatePassword(password);
 
-  if (username && password) {
+  // check valid username and password
+  if (isValidUsername && password && validatePassword(password)) {
     const response = await fetch('/api/signup', {
       method: 'POST',
       body: JSON.stringify({ username, password }),
@@ -21,11 +26,8 @@ const signupFormHandler = async (event) => {
 
 // Function to validate username
 async function validateUsername(username) {
-  // const lowercaseUsername = username.toLowerCase();
   const usernameField = document.getElementById('signup-username');
   const usernameHelpBlock = document.getElementById('usernameHelpBlock');
-  // usernameField.value = lowercaseUsername;
-
   const response = await fetch('/api/signup', {
     method: 'POST',
     body: JSON.stringify({ username }),
