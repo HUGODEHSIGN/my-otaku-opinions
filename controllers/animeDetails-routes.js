@@ -8,8 +8,6 @@ router.get('/:mal_id', async (req, res) => {
 
     const detailsData = await response.json();
 
-    console.log(detailsData);
-
     const data = detailsData.data;
 
     const animeDetails = {
