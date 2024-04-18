@@ -16,6 +16,10 @@
   color: black;
 }
 
+.anime-details-container {
+  margin-bottom: 3rem;
+}
+
 .anime-title {
   color: white;
   margin: 0;
