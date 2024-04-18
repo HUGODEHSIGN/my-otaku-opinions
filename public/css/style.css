@@ -9,6 +9,7 @@ body {
 .card-body {
   background-color: #111103;
 }
+
 .short-card-body {
   height: 30%;
 }
@@ -63,19 +64,23 @@ body {
       .anime-card-title {
         text-align: right;
         z-index: 1;
+        font-weight: bold;
         color: #ffffff;
         max-width: 35rem;
       }
 
       .anime-card-score {
         text-align: right;
+        font-weight: bold;
         color: #a086d2;
         z-index: 1;
       }
     }
 
     .anime-card-btn {
-      background-color: #8e3ac1;
+      background-color: #ffffff;
+      font-weight: bold;
+      color: #8e3ac1;
       transition: 300ms ease all;
     }
 
@@ -89,10 +94,20 @@ body {
     width: 400px;
     top: -30%;
     left: 0;
-    mask-image: linear-gradient(
-      to right,
-      rgba(17, 17, 3, 1),
-      rgba(17, 17, 3, 0)
-    );
+    mask-image: linear-gradient(to right,
+        rgba(17, 17, 3, 1),
+        rgba(17, 17, 3, 0));
   }
+}
+
+#search-btn {
+  background-color: #ffffff;
+  border-color: #8e3ac1;
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+}
+
+#search-icon {
+  color: #8e3ac1;
 }
