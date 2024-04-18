@@ -2,12 +2,12 @@ body {
   background-color: #111103;
 }
 
-.t-margin {
+/* .t-margin {
   margin-right: 8px;
-}
+} */
 
 .main-header {
-  margin-left: 2px;
+  margin-left: 10px;
 }
 
 .card-body {
