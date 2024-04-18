@@ -41,16 +41,17 @@
   </head>
   <body>
 
-    <nav class='navbar navbar-expand-lg bg-body-tertiary'>
+    <nav class='navbar navbar-expand-lg'>
       <div class='container-fluid'>
         <img
           src='/./images/apple-touch-icon.png'
           alt='placeholder'
           style='width: 32px; height: 32px'
         />
-        <a class='navbar-brand' href='/'>My Otaku Opinions</a>
+        <a class='navbar-brand primary-color-text main-header' href='/'><h2>My
+            Otaku Opinions</h2></a>
         <button
-          class='navbar-toggler'
+          class='navbar-toggler primary-color'
           type='button'
           data-bs-toggle='collapse'
           data-bs-target='#navbarSupportedContent'
@@ -63,25 +64,33 @@
         <div class='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
 
-            <li class='nav-item dropdown'>
+            <li class='nav-item'>
               {{#if logged_in}}
                 <li class='nav-item'>
                   <a
-                    class='nav-link active'
+                    class='nav-link nav-link-custom'
                     aria-current='page'
                     href='/followed'
                   >Follows</a>
                 </li>
-                <a class='nav-link' id='logout' href='#'>Logout</a>
+                <li class='nav-item'>
+                  <a
+                    class='nav-link nav-link-custom'
+                    id='logout'
+                    href='#'
+                  >Logout</a>
+                </li>
               {{else}}
                 <li class='nav-item'>
                   <a
-                    class='nav-link active'
+                    class='nav-link nav-link-custom'
                     aria-current='page'
                     href='/login'
                   >Follows</a>
                 </li>
-                <a class='nav-link' href='/login'>Login</a>
+                <li class='nav-item'>
+                  <a class='nav-link nav-link-custom' href='/login'>Login</a>
+                </li>
               {{/if}}
             </li>
 
@@ -89,7 +98,11 @@
         </div>
       </div>
     </nav>
-    <form class='d-flex mb-0 container-fluid' id='search-form' role='search'>
+    <form
+      class='d-flex mb-0 container-fluid mt-2'
+      id='search-form'
+      role='search'
+    >
       <input
         class='form-control me-2'
         type='search'
@@ -97,7 +110,9 @@
         aria-label='Search'
         id='search-input'
       />
-      <button class='btn btn-outline-success' type='submit'>Search</button>
+      <button class='btn primary-color text-white' type='submit'><i
+          class='bi bi-search'
+        ></i></button>
     </form>
     <div class='container mt-5'>
       {{{body}}}
