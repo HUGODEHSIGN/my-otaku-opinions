@@ -33,6 +33,10 @@ body {
   background-color: #816baa;
 }
 
+.homepage-container {
+  margin-top: 20vh;
+}
+
 .anime-card {
   position: relative;
   background-color: #111103;
