@@ -93,7 +93,8 @@ a {
     .anime-card-text {
       .anime-card-title {
         text-align: right;
-        z-index: 1;
+        position: relative;
+        z-index: 2;
         font-weight: bold;
         color: var(--light-color);
         max-width: 35rem;
@@ -101,9 +102,10 @@ a {
 
       .anime-card-score {
         text-align: right;
+        position: relative;
         font-weight: bold;
         color: #a086d2;
-        z-index: 1;
+        z-index: 2;
       }
     }
 
@@ -125,9 +127,11 @@ a {
     width: 400px;
     top: -30%;
     left: 0;
-    mask-image: linear-gradient(to right,
-        rgba(17, 17, 3, 1),
-        rgba(17, 17, 3, 0));
+    mask-image: linear-gradient(
+      to right,
+      rgba(17, 17, 3, 1),
+      rgba(17, 17, 3, 0)
+    );
   }
 }
 
