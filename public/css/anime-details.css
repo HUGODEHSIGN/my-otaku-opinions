@@ -3,6 +3,7 @@
   --light-color: #ffffff;
   --light-purple: #816baa;
   --dark-purple: #8e3ac1;
+  --disabled: #31312b;
 }
 
 .anime-additional-info {
@@ -60,4 +61,9 @@
 .comment-header {
   color: var(--light-color);
   border-bottom: 2px solid var(--dark-purple);
+}
+
+.btn-disabled {
+  background-color: var(--disabled);
+  pointer-events: none;
 }

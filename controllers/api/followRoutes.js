@@ -32,6 +32,7 @@ router.post('/', async (req, res) => {
     });
 
     console.log('THIS CONSOLE LOG', userAnime);
+    res.json('Anime successfully followed');
   } catch (err) {
     console.error(err);
   }
