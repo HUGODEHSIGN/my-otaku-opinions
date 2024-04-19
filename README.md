@@ -21,3 +21,28 @@ Our site makes it easier to track anime content by showing what's popular at the
 # What did we learn? 
 We learned the importance of communicating effectively within a team setting. We tried implementing different perspectives and ideas into our project. We also learn how to better integrate different coding aspects better as a whole. 
 
+
+## Built with
+- Sequelize
+- CSS
+- HTML
+- JS
+- Bootstrap
+## Prerequisites
+- npm install express
+- npm install express-session
+- npm install express-handlebars
+## Installation
+- clone or fork repo 
+- use npm init to get pacakge json
+- npm instal to install pacakges 
+## Contribution 
+- @HUGODEHSIGN
+- @lovertab
+- @nahidahmed92
+- @EC1145
+- @Xydra01
+## License
+We use the MIT License https://opensource.org/license/mit
+
+
