@@ -45,6 +45,7 @@
 .anime-details-btn {
   background-color: var(--dark-purple);
   color: var(--light-color);
+  font-weight: bold;
 }
 
 .anime-score {
@@ -65,5 +66,6 @@
 
 .btn-disabled {
   background-color: var(--disabled);
+  color: var(--light-color);
   pointer-events: none;
 }

@@ -7,10 +7,16 @@
         <h4 class='anime-card-score'>{{score}}</h4>
       </div>
       {{#if @root.logged_in}}
-        <button
-          class='btn anime-card-btn follow-btn'
-          data-mal-id='{{mal_id}}'
-        >Follow</button>
+        {{#if isFollowed}}
+          <button
+            class='btn anime-card-btn follow-btn btn-disabled'
+          >Followed</button>
+        {{else}}
+          <button
+            class='btn anime-card-btn follow-btn'
+            data-mal-id='{{mal_id}}'
+          >Follow</button>
+        {{/if}}
       {{/if}}
     </div>
 

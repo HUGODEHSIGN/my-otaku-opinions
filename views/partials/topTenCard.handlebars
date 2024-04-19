@@ -11,10 +11,17 @@
           <p class='carousel-card-score'>{{score}}</p>
         </div>
         {{#if @root.logged_in}}
-          <button
-            class='btn carousel-card-btn follow-btn'
-            data-mal-id='{{mal_id}}'
-          >Follow</button>
+          {{#if isFollowed}}
+            <button
+              class='btn carousel-card-btn btn-disabled'
+              data-mal-id='{{mal_id}}'
+            >Followed</button>
+          {{else}}
+            <button
+              class='btn carousel-card-btn follow-btn'
+              data-mal-id='{{mal_id}}'
+            >Follow</button>
+          {{/if}}
         {{/if}}
       </div>
     </div>
