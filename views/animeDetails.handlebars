@@ -4,7 +4,12 @@
   <div class='row'>
     <div class='col-12 col-md-3 d-flex flex-column gap-2'>
       <img class='anime-img' src='{{animeDetails.image_url}}' alt='' />
-      <button class='btn anime-details-btn mb-2'>Follow</button>
+      {{#if @root.logged_in}}
+        <button
+          class='btn anime-details-btn mb-2 follow-btn'
+          data-mal-id='{{animeDetails.mal_id}}'
+        >Follow</button>
+      {{/if}}
     </div>
     <div class='col-12 col-md-9 d-flex flex-column'>
 
