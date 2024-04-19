@@ -3,6 +3,7 @@
   --light-color: #ffffff;
   --light-purple: #816baa;
   --dark-purple: #8e3ac1;
+  --disabled: #31312b;
 }
 
 .anime-additional-info {
@@ -44,6 +45,7 @@
 .anime-details-btn {
   background-color: var(--dark-purple);
   color: var(--light-color);
+  font-weight: bold;
 }
 
 .anime-score {
@@ -60,4 +62,10 @@
 .comment-header {
   color: var(--light-color);
   border-bottom: 2px solid var(--dark-purple);
+}
+
+.btn-disabled {
+  background-color: var(--disabled);
+  color: var(--light-color);
+  pointer-events: none;
 }

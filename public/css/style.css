@@ -3,6 +3,7 @@
   --light-color: #ffffff;
   --light-purple: #816baa;
   --dark-purple: #8e3ac1;
+  --disabled: #31312b;
 }
 
 /* main handlebars */
@@ -120,6 +121,12 @@ a {
     .anime-card-btn:hover {
       background-color: var(--light-purple);
     }
+
+    .btn-disabled {
+      background-color: var(--disabled);
+      color: var(--light-color);
+      pointer-events: none;
+    }
   }
 
   .anime-card-image {
@@ -153,6 +160,12 @@ a {
 
 .card-text {
   color: var(--light-color);
+}
+
+.btn-disabled {
+  background-color: var(--disabled);
+  color: var(--light-color);
+  pointer-events: none;
 }
 
 /* end of example.card css */
